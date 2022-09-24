@@ -8,7 +8,7 @@ redis use store a chash memory
 
 1 - install pip install django-redis
 
-2 - download github msi redis
+2 - download github msi redis and install
 https://github.com/MicrosoftArchive/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.msi
 
 3 - redis check cmd - redis-cli 
