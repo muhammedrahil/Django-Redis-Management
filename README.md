@@ -15,8 +15,8 @@ https://github.com/MicrosoftArchive/redis/releases/download/win-3.2.100/Redis-x6
 
 defult port : 127.0.0.1:6379 - 
 
-cmd - redis-cli
-type : ping 
+cmd - redis-cli,
+type : ping ,
 output : pong
 
 settings************************************
