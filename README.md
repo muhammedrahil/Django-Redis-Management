@@ -1,30 +1,33 @@
 # DJANGO-REDIS
-DJANGO-REDIS
+## DJANGO-REDIS
 
 
 
 redis use store a chash memory
 
 
-1 - install pip install django-redis
+1 - ``` install pip install django-redis ```
 
 2 - download github msi redis and install
 https://github.com/MicrosoftArchive/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.msi
 
-3 - redis check cmd - redis-cli 
+3 -``` redis check cmd - redis-cli ```
 
 defult port : 127.0.0.1:6379 - 
 
-cmd - redis-cli,
-type : ping ,
+cmd - ```redis-cli```,
+type : ```ping``` ,
 output : pong
 
-settings************************************
+## settings
 
+```
 CACHE_TTL = 60 * 1500
+```
 
 # redis cashe
 
+```
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
@@ -34,11 +37,12 @@ CACHES = {
         }
     }
 }
+```
 
 
-views************************************
+## views
 
-
+```
 from django.conf import settings
 from django.core.cache.backends.base import DEFAULT_TIMEOUT
 from django.views.decorators.cache import cache_page
@@ -62,4 +66,5 @@ CACHE_TTL = getattr(settings ,'CACHE_TTL' , DEFAULT_TIMEOUT)
                 'product_qwantity':product_qwantity,
                 }
                 cache.set('pk', context)
-       
+                
+ ```
