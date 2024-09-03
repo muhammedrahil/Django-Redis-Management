@@ -1,6 +1,7 @@
-# DJANGO-REDIS
-## DJANGO-REDIS
+# Django-Redis-Management
 
+
+Redis is the datastore and message broker between Celery and Django. In other words, Django and Celery use Redis to communicate with each other (instead of a SQL database). Redis can also be used as a cache as well. An alternative for Django & Celery is RabbitMQ (not covered here)
 
 
 redis use store a chash memory
